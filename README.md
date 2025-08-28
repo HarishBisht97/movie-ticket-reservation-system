@@ -7,7 +7,7 @@
 # Tech Stack
 
 - Nodejs
-- TypeSript
+- TypeScript
 - Nestjs
 - Postgresql
 - Stripe (payment gateway)
@@ -21,28 +21,28 @@
   - register
   - JWT Authorization
 - [x] Roles (super-admin, admin, user)
-  - super-admin can up user to admin And vice versa
+  - super-admin can promote users to admin and demote them back
 - [x] Movie Management
 
-  - super-admin and admin can create, update and delete movies
+  - super-admin and admin can create, update, and delete movies
   - Movies are categorized by genre.
-  - user can filter movies by ( name, category, showTime and between tow dates)
-  - pagination response for optimization
+  - users can filter movies by name, category, showtime, and between two dates
+  - paginated responses for performance
 
 - [x] Firebase integration
-  - to uploade movies poster as (image or video)
+  - to upload movie posters as image or video
 - [x] Reservation Management
 
-  - user can create order for an movie and payment
-  - after payment success user resevied and email with tikck details
-  - user can cacele reservat movie and refund mony
+  - users can create an order for a movie and make a payment
+  - after payment success, users receive an email with ticket details
+  - users can cancel a reservation and receive a refund
 
 - [x] Scheduling
-  - An hour before the movie is shown, an email is sent to users to remind them of the show time.efore
-- [x] Emails Notifications
-  - send emails to user (create order, payment success, refund order and movie show time)
-- [x] Integtation Testing (jest)
-  - created a test for all service and controllers in app
+  - An hour before the movie is shown, an email is sent to users to remind them of the showtime.
+- [x] Email Notifications
+  - send emails to users (order created, payment success, refund issued, and movie showtime reminder)
+- [x] Integration Testing (Jest)
+  - created tests for all services and controllers in the app
 
 ## How To Install
 
@@ -57,7 +57,7 @@
 > pnpm start:dev
 ```
 
-## Run App (in dev production)
+## Run App (in production)
 
 ```bash
 > pnpm build
@@ -88,8 +88,6 @@ EMAIL_SK: string;
 ```
 
 #
-
 #### With thanks and appreciation to [roadmap.sh](https://roadmap.sh/)
 
 ## [Project Page](https://roadmap.sh/projects/movie-reservation-system)
-# movie-ticket-reservation-system
